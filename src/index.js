@@ -4,13 +4,16 @@ import './index.css';
 import '../src/components/MainWeather.css'
 import App from './App';
 import MainWeather from './components/MainWeather';
+import WeatherBox from './components/WeatherBox';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <App />
     <MainWeather />
+    <WeatherBox />
   </React.StrictMode>
 );
 
