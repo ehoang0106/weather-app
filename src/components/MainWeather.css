@@ -1,0 +1,21 @@
+.main-weather {
+    position: relative;
+    left: 100px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 480px;
+    width: 980px;
+    border-radius: 30px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px silver;
+    
+}
+
+.inner-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
