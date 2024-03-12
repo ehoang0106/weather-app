@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import '../src/components/MainWeather.css'
+import '../src/components/WeatherBox.css'
+
 import App from './App';
 import MainWeather from './components/MainWeather';
 import WeatherBox from './components/WeatherBox';
