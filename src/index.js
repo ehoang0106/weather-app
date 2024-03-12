@@ -16,6 +16,10 @@ root.render(
     <App />
     <MainWeather />
     <WeatherBox />
+    <WeatherBox />
+    <WeatherBox />
+    <WeatherBox />
+
   </React.StrictMode>
 );
 
