@@ -50,3 +50,22 @@
     position: absolute;
     bottom: 250px;
 }
+
+.city {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.city input {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px silver;
+    border: 0;
+    
+}
