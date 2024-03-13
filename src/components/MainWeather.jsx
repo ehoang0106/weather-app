@@ -18,6 +18,8 @@ const MainWeather = () => {
 
     const today = weekdays[day-1];
 
+    const currentDate = date.toLocaleDateString();
+    
     return (
         <div className="container">
 
@@ -31,7 +33,7 @@ const MainWeather = () => {
                 </div>
 
                 <div className="today">
-                    <p>{today}</p>
+                    <p>{today}, {currentDate}</p>
                     <h2>New York</h2>
                     <p>Temperature: 72 F</p>
                     <p>Clear Sky</p>

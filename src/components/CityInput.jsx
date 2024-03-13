@@ -19,7 +19,7 @@ const CityInput = (props) => {
     
 
     return (
-        <div>
+        <div className="inputBox">
             
             <h1>{city}</h1>
             <input
