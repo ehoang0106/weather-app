@@ -4,13 +4,14 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
+    
 }
 
 .main {
     display: flex;
     justify-content: space-between;
-    height: 460px;
-    width: 800px;
+    min-height: 460px;
+    width: 770px;
     z-index: 1;
     box-shadow: 0px 0px 10px silver;
     border-radius: 20px;
@@ -24,22 +25,22 @@
 }
 
 .inner-main img {
-    width: 150px;
+    width: 190px;
 }
 
 .today {
     flex: 70%;
     margin-left: 30px;
-    margin-top: 100px;
+    margin-top: 80px;
     padding-left: 50px;
 }
 
 .today p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .today h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
 
