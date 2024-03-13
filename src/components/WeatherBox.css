@@ -1,25 +1,25 @@
-.WeatherBox {
-    display: inline-block;
-}
+
 
 .weather-box {
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 2;
     border-radius: 40px;
-    box-shadow: 0px 0px 10px silver;
+    box-shadow: 3px 0px 10px silver;
     margin: 20px;
 
 }
 
 .weather-box img {
-    width: 100px;
+    width: 80px;
+    margin: -18px;
 }
 
 .weather-box p {
     font-size: 15px;
 }
+

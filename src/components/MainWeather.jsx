@@ -1,3 +1,4 @@
+import WeatherBox from "./WeatherBox";
 
 
 const MainWeather = () => {
@@ -14,7 +15,15 @@ const MainWeather = () => {
                     <p>Temperature: 72 F</p>
                     <p>Clear Sky</p>
                 </div>
+            
+            </div>
 
+
+            <div className="weather">
+                <WeatherBox />
+                <WeatherBox />
+                <WeatherBox />
+                <WeatherBox />
             </div>
         </div>
 

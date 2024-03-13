@@ -6,7 +6,7 @@ import '../src/components/WeatherBox.css'
 
 import App from './App';
 import MainWeather from './components/MainWeather';
-import WeatherBox from './components/WeatherBox';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,10 +15,8 @@ root.render(
 
     <App />
     <MainWeather />
-    <WeatherBox />
-    <WeatherBox />
-    <WeatherBox />
-    <WeatherBox />
+
+    
 
   </React.StrictMode>
 );
