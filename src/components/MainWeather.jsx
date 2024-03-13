@@ -17,7 +17,6 @@ const MainWeather = () => {
     ]
 
 
-
     return (
         <div className="container">
 
