@@ -1,10 +1,10 @@
-const WeatherBox = () => {
+const WeatherBox = (props) => {
     return (
         
         <div className="weather-box">
-            <h3>Wednesday</h3>
-            <img src="https://raw.githubusercontent.com/alexkowsik/react-weather-app/master/src/images/01d.svg" alt="" />
-            <p>68 F</p>
+            <h3>{props.today}</h3>
+            <img src={props.img} alt="" />
+            <p>{props.temp}</p>
         </div>
         
             

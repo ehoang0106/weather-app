@@ -1,17 +1,17 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
+    justify-content: flex-start;
     
+    align-items: center;
+    padding-top: 150px;
 }
 
 .main {
     display: flex;
     justify-content: space-between;
-    min-height: 460px;
-    width: 770px;
+    height: 420px;
+    width: 900px;
     z-index: 1;
     box-shadow: 0px 0px 10px silver;
     border-radius: 20px;
@@ -25,22 +25,22 @@
 }
 
 .inner-main img {
-    width: 190px;
+    width: 230px;
 }
 
 .today {
     flex: 70%;
     margin-left: 30px;
-    margin-top: 80px;
+    margin-top: 50px;
     padding-left: 50px;
 }
 
 .today p {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .today h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -48,7 +48,7 @@
     display: flex;
     z-index: 2;
     position: absolute;
-    bottom: 210px;
+    bottom: 350px;
 }
 
 .city {
@@ -56,7 +56,7 @@
     height: 100px;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .city input {
@@ -68,4 +68,19 @@
     box-shadow: 0px 0px 10px silver;
     border: 0;
     
+}
+
+.city button {
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #96EFFF;
+    margin-left: 30px;
+    border: 0;
+}
+
+.city button:hover {
+    background-color: #5FBDFF;
+    color: #fff;
+    cursor: pointer;
 }

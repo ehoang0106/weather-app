@@ -5,7 +5,7 @@ import '../src/components/MainWeather.css'
 import '../src/components/WeatherBox.css'
 
 import App from './App';
-import MainWeather from './components/MainWeather';
+
 
 
 
@@ -16,7 +16,7 @@ root.render(
 
     
     <App />
-    <MainWeather />
+    
 
     
 
