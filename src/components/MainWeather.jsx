@@ -26,17 +26,30 @@ const MainWeather = (props) => {
 
     //-------------------------------------------------------
     
-    const city = "Ha Noi";
+    const city = "Anaheim";
     const [temp, setTemp] = useState("");
+    const [cityName, setCityName] = useState("");
+    const [weatherMain, setWeatherMain] = useState("");
+    const [weatherDescription, setWeatherDescription] = useState("");
     
     useEffect(() => {
         async function weatherData() {
             const response = await fetch (`https://api.openweathermap.org/data/2.5/forecast/?APPID=6557810176c36fac5f0db536711a6c52&q=${city}&units=imperial`);
     
             const data = await response.json();
-            const temp = data.list[0].main.temp
+
+            const temp = data.list[0].main.temp;
             setTemp(temp);
-            console.log(temp);
+
+            const cityName = data.city.name;
+            setCityName(cityName);
+
+            const weatherMain = data.list[0].weather[0].main;
+            setWeatherMain(weatherMain);
+
+            const weatherDescription = data.list[0].weather[0].description;
+            setWeatherDescription(weatherDescription);
+            
         }
 
         weatherData();
@@ -59,10 +72,10 @@ const MainWeather = (props) => {
                 </div>
 
                 <div className="today">
-                    <p>{today}, {currentDate}</p>
-                    <h2>New York</h2>
+                    <p>{today}, {"0"+currentDate}</p>
+                    <h2>{cityName}</h2>
                     <p>Temperature: {Math.floor(temp)} °F</p>
-                    <p>Clear Sky</p>
+                    <p>{weatherMain} - {weatherDescription}</p>
                 </div>
             
             </div>
