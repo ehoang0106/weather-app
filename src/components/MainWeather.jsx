@@ -1,8 +1,12 @@
+import { useEffect, useState } from "react";
+
+
 import CityInput from "./CityInput";
 import WeatherBox from "./WeatherBox";
 
 
-const MainWeather = () => {
+
+const MainWeather = (props) => {
 
     const date = new Date();
     const day = date.getDay();
@@ -19,7 +23,29 @@ const MainWeather = () => {
     const today = weekdays[day-1];
 
     const currentDate = date.toLocaleDateString();
+
+    //-------------------------------------------------------
     
+    const city = "Ha Noi";
+    const [temp, setTemp] = useState("");
+    
+    useEffect(() => {
+        async function weatherData() {
+            const response = await fetch (`https://api.openweathermap.org/data/2.5/forecast/?APPID=6557810176c36fac5f0db536711a6c52&q=${city}&units=imperial`);
+    
+            const data = await response.json();
+            const temp = data.list[0].main.temp
+            setTemp(temp);
+            console.log(temp);
+        }
+
+        weatherData();
+    }, []);
+
+
+
+    //-------------------------------------------------------
+
     return (
         <div className="container">
 
@@ -35,7 +61,7 @@ const MainWeather = () => {
                 <div className="today">
                     <p>{today}, {currentDate}</p>
                     <h2>New York</h2>
-                    <p>Temperature: 72 F</p>
+                    <p>Temperature: {Math.floor(temp)} °F</p>
                     <p>Clear Sky</p>
                 </div>
             
